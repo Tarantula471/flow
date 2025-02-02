@@ -38,13 +38,15 @@
     "coveralls": "pnpx coveralls < coverage/lcov.info",
     "size-limit": "pnpm rollup && pnpm size-limit",
     "build": "pnpm rollup",
-    "fix-css": "stylelint src/**/*style.ts --custom-syntax @stylelint/postcss-css-in-js --fix"
+    "fix-css": "stylelint src/**/*style.ts --custom-syntax @stylelint/postcss-css-in-js --fix",
+    "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
     "classnames": "^2.5.1",
     "dayjs": "^1.11.13",
     "focus-visible": "^5.2.1",
     "react": "^19.0.0",
+    "react-chrono": "^2.6.1",
     "react-dom": "^19.0.0",
     "styled-components": "^6.1.13",
     "use-debounce": "^10.0.4",
@@ -153,7 +155,9 @@
   "resolutions": {
     "ansi-regex": "5.0.1",
     "json-schema": "0.4.0",
-    "semver": "7.5.4"
+    "semver": "7.5.4",
+    "puppeteer-core": "24.1.1",
+    "estimo": "3.0.3"
   },
   "files": [
     "dist"
